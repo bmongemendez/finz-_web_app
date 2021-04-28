@@ -15,3 +15,20 @@ D:\Dev Projects\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DO.dll
 D:\Dev Projects\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DAL.EF.pdb
 D:\Dev Projects\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DO.pdb
 D:\Dev Projects\Finz!(Backend)\DAL.Repository\obj\Debug\netcoreapp3.1\DAL.Repository.csproj.CopyComplete
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DAL.Repository.deps.json
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DAL.Repository.runtimeconfig.json
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DAL.Repository.runtimeconfig.dev.json
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DAL.Repository.dll
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DAL.Repository.pdb
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DAL.EF.dll
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DO.dll
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DAL.EF.pdb
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\bin\Debug\netcoreapp3.1\DO.pdb
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\obj\Debug\netcoreapp3.1\DAL.Repository.csprojAssemblyReference.cache
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\obj\Debug\netcoreapp3.1\DAL.Repository.AssemblyInfoInputs.cache
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\obj\Debug\netcoreapp3.1\DAL.Repository.AssemblyInfo.cs
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\obj\Debug\netcoreapp3.1\DAL.Repository.csproj.CoreCompileInputs.cache
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\obj\Debug\netcoreapp3.1\DAL.Repository.csproj.CopyComplete
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\obj\Debug\netcoreapp3.1\DAL.Repository.dll
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\obj\Debug\netcoreapp3.1\DAL.Repository.pdb
+D:\Dev Projects\Finz! Web App\Finz!(Backend)\DAL.Repository\obj\Debug\netcoreapp3.1\DAL.Repository.genruntimeconfig.cache

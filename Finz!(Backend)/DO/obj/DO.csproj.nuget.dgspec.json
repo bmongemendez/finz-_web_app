@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj": {}
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj": {}
   },
   "projects": {
-    "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj": {
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj",
+        "projectUniqueName": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj",
         "projectName": "DO",
-        "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj",
+        "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj",
         "packagesPath": "C:\\Users\\bmong\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev Projects\\Finz!(Backend)\\DO\\obj\\",
+        "outputPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmong\\AppData\\Roaming\\NuGet\\NuGet.Config",

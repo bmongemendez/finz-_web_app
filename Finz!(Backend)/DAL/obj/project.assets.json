@@ -5785,11 +5785,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev Projects\\Finz!(Backend)\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL\\DAL.csproj",
+      "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\bmong\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL\\obj\\",
+      "outputPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bmong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5807,14 +5807,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
-              "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj"
+            "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
+              "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj"
             },
-            "D:\\Dev Projects\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj": {
-              "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj"
+            "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj": {
+              "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj"
             },
-            "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj": {
-              "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj"
+            "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj": {
+              "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj"
             }
           }
         }

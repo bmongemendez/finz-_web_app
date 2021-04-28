@@ -1,0 +1,25 @@
+@import '../1-utilities/functions';
+
+//COLORS
+$color__primary: #19f18a;
+$color__secondary: #49c6e5;
+$color__light: #fffbfa;
+$color__dark: #363732;
+$color__accent: #ef626c;
+$background__gradient: linear-gradient(180deg, #19f18a 0%, #49c6e5 100%);
+
+//SIZES
+$xl: rem(72px);
+$l: rem(36px);
+$m: rem(18px);
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+$font__normal: $m 'Montserrat', sans-serif;
+$font__logo: $xl 'Carter One', cursive;
+
+//UTILITIES
+$radius: 50px;
+$shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$drop-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

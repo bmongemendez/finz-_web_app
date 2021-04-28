@@ -31,7 +31,7 @@ namespace DAL
             return _repo.GetAll();
         }
 
-        public data.Ahorros GetOneById(int id)
+        public data.Ahorros GetOneById(String id)
         {
             return _repo.GetOneById(id);
         }
@@ -56,6 +56,11 @@ namespace DAL
         public async Task<data.Ahorros> GetOneByIdWithAsync(int id)
         {
             return await _repo.GetByOneWithAsAsync(id);
+        }
+
+        public data.Ahorros GetOneById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

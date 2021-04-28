@@ -38,6 +38,11 @@ namespace DAL
             return _repo.GetOneById(id);
         }
 
+        public data.Categorias GetOneById(string id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Insert(data.Categorias t)
         {
             _repo.Insert(t);

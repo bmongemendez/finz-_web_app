@@ -54,5 +54,10 @@ namespace BS
         {
             return await new DAL.Retos(context).GetOneByIdWithAsync(id);
         }
+
+        public data.Retos GetOneById(string id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

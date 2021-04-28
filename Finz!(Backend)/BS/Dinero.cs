@@ -54,5 +54,10 @@ namespace BS
         {
             return await new DAL.Dinero(context).GetOneByIdWithAsync(id);
         }
+
+        public data.Dinero GetOneById(string id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

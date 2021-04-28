@@ -14,7 +14,7 @@ namespace API.DataModels
         public DateTime FechaLimite { get; set; }
         public DateTime FechaInicio { get; set; }
         public string Descripcion { get; set; }
-        public int IdUsuario { get; set; }
+        public String IdUsuario { get; set; }
 
         public virtual Usuario IdUsuarioNavigation { get; set; }
     }

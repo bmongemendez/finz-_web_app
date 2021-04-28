@@ -11,5 +11,6 @@ namespace DO.Interfaces
         void Delete(T t);
         IEnumerable<T> GetAll();
         T GetOneById(int id);
+        T GetOneById(String id);
     }
 }

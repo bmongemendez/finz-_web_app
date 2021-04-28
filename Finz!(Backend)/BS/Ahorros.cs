@@ -54,5 +54,10 @@ namespace BS
         {
             return await new DAL.Ahorros(context).GetOneByIdWithAsync(id);
         }
+
+        public data.Ahorros GetOneById(string id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

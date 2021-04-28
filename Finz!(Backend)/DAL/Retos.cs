@@ -57,5 +57,10 @@ namespace DAL
         {
             return await _repo.GetByOneWithAsAsync(id);
         }
+
+        public data.Retos GetOneById(string id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

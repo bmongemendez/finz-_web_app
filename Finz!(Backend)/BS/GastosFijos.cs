@@ -54,5 +54,10 @@ namespace BS
         {
             return await new DAL.GastosFijos(context).GetOneByIdWithAsync(id);
         }
+
+        public data.GastosFijos GetOneById(string id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -18,7 +18,7 @@ namespace API.DataModels
         //    Retos = new HashSet<Retos>();
         //}
 
-        public int IdUsuario { get; set; }
+        public String IdUsuario { get; set; }
         public string Contrasena { get; set; }
         public string Nombre { get; set; }
         public string Correo { get; set; }

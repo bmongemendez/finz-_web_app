@@ -1,0 +1,151 @@
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form {
+	.form__input-container {
+		position: relative;
+	}
+
+	.form__title {
+		font: $font__normal;
+		font-size: $l;
+		width: 435px;
+		height: 60px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	.form__label {
+		position: absolute;
+		left: 50px;
+		top: -15px;
+		height: 30px;
+		width: 180px;
+		background: $background__gradient;
+		border-radius: $radius;
+		font: $font__normal;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 30;
+		transition: all 0.3s ease-out;
+	}
+
+	.form__input-container--remember {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 30px;
+		width: 180px;
+		margin-bottom: 5px;
+	}
+
+	.form__label-remember {
+		font: $font__normal;
+		margin-right: 10px;
+	}
+
+	.form__remember-me {
+		height: 15px;
+		width: 15px;
+		display: inline-block;
+		text-align: center;
+		font: $font__normal;
+	}
+
+	.form__input {
+		width: 435px;
+		height: 60px;
+		border: 4px solid $color__dark;
+		box-shadow: $shadow;
+		border-radius: $radius;
+		filter: $drop-shadow;
+		outline: none;
+		padding-left: 15px;
+		font: $font__normal;
+		margin-bottom: 50px;
+
+		&:focus,
+		&:active,
+		&:target {
+			& + .form__label {
+				left: 75px;
+			}
+		}
+	}
+
+	.form__submit {
+		width: 435px;
+		height: 60px;
+		box-shadow: $shadow;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	.form__google-icon {
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		background-image: url(../../assets/Google_icon.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-right: 10px;
+	}
+
+	.form__add-icon {
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		background-image: url(../../assets/ADD_Icon.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-right: 10px;
+	}
+
+	.form__delete-icon {
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		background-image: url(../../assets/Delete_Icon.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-right: 10px;
+	}
+
+	.form__password-eye {
+		display: inline-block;
+		position: absolute;
+		height: 24px;
+		width: 24px;
+		background-image: url(../../assets/Eye_Hide_Icon.svg);
+		right: 15px;
+		top: 30px;
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+	.form__password-eye.form__password-eye--hide {
+		background-image: url(../../assets/Eye_Show_Icon.svg);
+	}
+}
+
+.toggle-login-register,
+.forgot-password {
+	font: $font__normal;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: $color__dark;
+	padding-bottom: 7px;
+
+	&:hover {
+		color: #000000;
+	}
+}

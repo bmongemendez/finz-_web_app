@@ -1,0 +1,36 @@
+%button {
+	background: none;
+	padding: 15px 25px;
+	border: none;
+	font: $font__normal;
+	font-weight: 700;
+	outline: none;
+	cursor: pointer;
+	transition: 0.15s linear;
+	box-shadow: $shadow;
+	&:active,
+	&:target {
+		transform: scale(0.8) !important;
+	}
+}
+
+.button__primary {
+	@extend %button;
+	background: $background__gradient;
+	border-radius: $radius;
+	&:hover {
+		color: $color__dark;
+		transform: scale(1.03);
+	}
+}
+
+.button__secondary {
+	@extend %button;
+	background: none;
+	border-radius: $radius;
+	border: 4px solid $color__primary;
+	&:hover {
+		color: $color__dark;
+		transform: scale(1.03);
+	}
+}

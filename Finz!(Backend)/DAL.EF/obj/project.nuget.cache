@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uSivmXj3UYgB5evIe8ESt1UaBMdQxqhD21BXZhW467DyRVHIvwanBy8udWgN1jOhV3yFWYUCX+/Mn/T+MtxZzA==",
+  "dgSpecHash": "fiOHJsVpC62TLiY0axVpMqePyOtZlmrkYy8UIrZOx7+dkLDjcp8vwR32M7G33mgN/7Gi0SbdKZMbc5d7C5R+zw==",
   "success": true,
-  "projectFilePath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj",
+  "projectFilePath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bmong\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\bmong\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

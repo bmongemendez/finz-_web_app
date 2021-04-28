@@ -1,0 +1,52 @@
+﻿@model Finz__Frontend_.Models.Retos
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<div class="container  w-100 min-vw-100">
+    <partial name="../Components/_MenuPartial" />
+    <h1>Details</h1>
+
+    <div>
+        <h4>Retos</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FechaLimite)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FechaLimite)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FechaInicio)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FechaInicio)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Descripcion)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.IdUsuarioNavigation)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IdUsuarioNavigation.IdUsuario)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a class="btn btn-light border-info" asp-action="Edit" asp-route-id="@Model.IdReto">Edit</a> |
+        <a class="btn btn-light border-info" asp-action="Index">Back to List</a>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿@model Finz__Frontend_.Models.Dinero
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Dinero</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DineroActual)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DineroActual)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdUsuarioNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdUsuarioNavigation.IdUsuario)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-light border-info" asp-action="Edit" asp-route-id="@Model.IdDinero">Edit</a> |
+    <a class="btn btn-light border-info" asp-action="Index">Back to List</a>
+</div>

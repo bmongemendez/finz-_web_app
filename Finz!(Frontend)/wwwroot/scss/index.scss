@@ -1,0 +1,29 @@
+// Here I should only have all my @imports
+
+// 1-utilities
+@import './1-utilities/variables';
+@import './1-utilities/functions';
+@import './1-utilities/mixins';
+
+// 2-base
+@import './2-base/base';
+
+// 3-layout
+@import '3-layout/navbar';
+@import '3-layout/footer';
+@import '3-layout/form';
+@import '3-layout/menu';
+@import '3-layout/containers';
+
+// 4-components
+@import '4-components/button';
+@import '4-components/chart';
+
+// 5-pages
+@import '5-pages/index';
+@import '5-pages/login';
+@import '5-pages/register';
+@import '5-pages/dashboard';
+@import '5-pages/incomes';
+@import '5-pages/confirmExternalLogin';
+

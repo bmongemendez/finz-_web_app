@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev Projects\\Finz!(Backend)\\BS\\BS.csproj": {}
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\BS\\BS.csproj": {}
   },
   "projects": {
-    "D:\\Dev Projects\\Finz!(Backend)\\BS\\BS.csproj": {
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\BS\\BS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev Projects\\Finz!(Backend)\\BS\\BS.csproj",
+        "projectUniqueName": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\BS\\BS.csproj",
         "projectName": "BS",
-        "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\BS\\BS.csproj",
+        "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\BS\\BS.csproj",
         "packagesPath": "C:\\Users\\bmong\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev Projects\\Finz!(Backend)\\BS\\obj\\",
+        "outputPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\BS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,14 +29,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
-                "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj"
+              "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
+                "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj"
               },
-              "D:\\Dev Projects\\Finz!(Backend)\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL\\DAL.csproj"
+              "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL\\DAL.csproj"
               },
-              "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj": {
-                "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj"
+              "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj": {
+                "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj",
+        "projectUniqueName": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj",
         "projectName": "DAL.EF",
-        "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj",
+        "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj",
         "packagesPath": "C:\\Users\\bmong\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\obj\\",
+        "outputPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,8 +110,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj": {
-                "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj"
+              "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj": {
+                "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "D:\\Dev Projects\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj": {
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev Projects\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj",
+        "projectUniqueName": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj",
         "projectName": "DAL.Repository",
-        "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj",
+        "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj",
         "packagesPath": "C:\\Users\\bmong\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.Repository\\obj\\",
+        "outputPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -185,8 +185,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
-                "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj"
+              "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
+                "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj"
               }
             }
           }
@@ -235,14 +235,14 @@
         }
       }
     },
-    "D:\\Dev Projects\\Finz!(Backend)\\DAL\\DAL.csproj": {
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev Projects\\Finz!(Backend)\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL\\DAL.csproj",
+        "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\bmong\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL\\obj\\",
+        "outputPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -260,14 +260,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
-                "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj"
+              "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj": {
+                "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.EF\\DAL.EF.csproj"
               },
-              "D:\\Dev Projects\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj": {
-                "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj"
+              "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj": {
+                "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DAL.Repository\\DAL.Repository.csproj"
               },
-              "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj": {
-                "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj"
+              "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj": {
+                "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj"
               }
             }
           }
@@ -316,14 +316,14 @@
         }
       }
     },
-    "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj": {
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj",
+        "projectUniqueName": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj",
         "projectName": "DO",
-        "projectPath": "D:\\Dev Projects\\Finz!(Backend)\\DO\\DO.csproj",
+        "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\DO.csproj",
         "packagesPath": "C:\\Users\\bmong\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev Projects\\Finz!(Backend)\\DO\\obj\\",
+        "outputPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Backend)\\DO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmong\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -39,7 +39,7 @@ namespace API.Controllers
 
         // GET: api/Usuario/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<datamodels.Usuario>> GetUsuario(int id)
+        public async Task<ActionResult<datamodels.Usuario>> GetUsuario(String id)
         {
             var usuario = new BS.Usuario(_context).GetOneById(id);
 
@@ -55,7 +55,7 @@ namespace API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsuario(int id, datamodels.Usuario usuario)
+        public async Task<IActionResult> PutUsuario(String id, datamodels.Usuario usuario)
         {
             if (id != usuario.IdUsuario)
             {
@@ -96,7 +96,7 @@ namespace API.Controllers
 
         // DELETE: api/Usuario/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<datamodels.Usuario>> DeleteUsuario(int id)
+        public async Task<ActionResult<datamodels.Usuario>> DeleteUsuario(String id)
         {
             var usuario = new BS.Usuario(_context).GetOneById(id);
             if (usuario == null)
@@ -110,7 +110,7 @@ namespace API.Controllers
             return mapaux;
         }
 
-        private bool UsuarioExists(int id)
+        private bool UsuarioExists(String id)
         {
             return (new BS.Usuario(_context).GetOneById(id) != null);
         }

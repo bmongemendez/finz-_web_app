@@ -29,9 +29,14 @@ namespace BS
             return new DAL.Usuario(context).GetAll();
         }
 
-        public data.Usuario GetOneById(int id)
+        public data.Usuario GetOneById(String id)
         {
             return new DAL.Usuario(context).GetOneById(id);
+        }
+
+        public data.Usuario GetOneById(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public void Insert(data.Usuario t)

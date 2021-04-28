@@ -1,0 +1,22 @@
+// resets
+// "*" selector does not select :before and :after pseudo elements, so we have to do it like this
+*,
+*::before,
+*::after {
+	//box-zising: border-box prevents the padding and border to increase the size of the element
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+// Remove arrows from input type=number
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+
+// END Remove arrows from input type=number

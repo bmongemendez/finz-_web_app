@@ -55,7 +55,7 @@ namespace DAL.Repository
             return dbContext.Set<T>().Where(predicado).FirstOrDefault();
         }
 
-        public T GetOneById(int id)
+        public T GetOneById(String id)
         {
             return dbContext.Set<T>().Find(id);
         }
@@ -95,6 +95,11 @@ namespace DAL.Repository
         public void UpdateRange(IEnumerable<T> t)
         {
             dbContext.Set<T>().UpdateRange(t);
+        }
+
+        public T GetOneById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

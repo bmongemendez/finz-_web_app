@@ -11,7 +11,7 @@
                 <img src="~/assets/Income_Icon.svg"
                      class="main-stadistic__image" />
                 <p class="main-stadistic__text">Incomes This Month</p>
-                <p class="main-stadistic__value">+$324</p>
+                <p class="main-stadistic__value main-stadistics__incomes">+$0</p>
             </div>
         </div>
         <div class="dashboard__main-stadistics">
@@ -22,7 +22,7 @@
                     Your net <br />
                     worth is
                 </p>
-                <p class="main-stadistic__value">$1322</p>
+                <p class="main-stadistic__value main-stadistics__net">$0</p>
             </div>
         </div>
         <div class="dashboard__main-stadistics">
@@ -30,29 +30,205 @@
                 <img src="~/assets/Expense_Icon.svg"
                      class="main-stadistic__image" />
                 <p class="main-stadistic__text">Expenses This Month</p>
-                <p class="main-stadistic__value">-$324</p>
+                <p class="main-stadistic__value main-stadistics__expenses">-$0</p>
             </div>
         </div>
         <div class="dashboard__chart-container chart-container">
             <div class="chart__title-container">
-                <h4 class="chart__title">Incomes and Expenses of</h4>
-                <select name="" id="incExpYearDashboard" class="chart__year-select">
+                <h4 class="chart__title">Incomes and Expenses </h4>
+                @*<select name="" id="incExpYearDashboard" class="chart__year-select">
                     <option value="2021">2021</option>
                     <option value="2020">2020</option>
-                </select>
+                </select>*@
             </div>
             <canvas id="chartExpIncDashboard"></canvas>
         </div>
         <div class="dashboard__chart-container chart-container">
             <div class="chart__title-container">
-                <h4 class="chart__title">Expenses by category of</h4>
-                <select name="" id="expCatYearDashboard" class="chart__year-select">
+                <h4 class="chart__title">Expenses by category </h4>
+                @*<select name="" id="expCatYearDashboard" class="chart__year-select">
                     <option value="2021">2021</option>
                     <option value="2020">2020</option>
-                </select>
+                </select>*@
             </div>
             <canvas id="chartExpCatDashboard"></canvas>
         </div>
     </div>
 </div>
-   
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script type="text/javascript">
+
+        let userId = '@ViewBag.userId';
+
+        const mainStadisticsNet = document.querySelector('.main-stadistics__net');
+
+        const mainStadisticsIncomes = document.querySelector('.main-stadistics__incomes');
+
+        const mainStadisticsExpenses = document.querySelector('.main-stadistics__expenses');
+
+        let incomesTotal = 0;
+
+        let expensesTotal = 0;
+
+        const ctxIncExpDashboard =
+            document.querySelector('#chartExpIncDashboard') &&
+            document.querySelector('#chartExpIncDashboard').getContext('2d');
+
+        const ctxExpByCatDashboard =
+            document.querySelector('#chartExpCatDashboard') &&
+            document.querySelector('#chartExpCatDashboard').getContext('2d');
+
+
+                 
+                    
+                    const dataExpensesbyCategory = [];
+
+                    const labelsCategories = [];
+
+
+
+
+        const incomes = [];
+        const expenses = [];
+        const labels = [];
+
+    const setDataForIncomesChart = (data) => {
+        console.log(data[0].idUsuario)
+        data.map(x => {
+            if (x.idUsuario == userId) {
+                incomes.push(x.dineroActual);
+                labels.push(x.idDinero);
+            }
+        })
+
+        incomesTotal = incomes.reduce((acc, el) => {
+            acc = acc + el;
+            return acc;
+        })
+
+        mainStadisticsIncomes.innerHTML = `$+${incomesTotal}`
+        }
+
+        const setDataForExpenses = (data) => {
+
+            console.log('expenses:', data);
+
+            data.map(x => {
+                if (x.idUsuario == userId) {
+                    expenses.push(x.gastos1);
+                    dataExpensesbyCategory.push(x.gastos1)
+                    labelsCategories.push(x.idCategoriaNavigation.nombre);
+                }
+            })
+
+            expensesTotal = expenses.reduce((acc, el) => {
+                acc = acc + el;
+                return acc;
+            })
+
+            mainStadisticsExpenses.innerHTML = `$-${expensesTotal}`
+
+            let netTotal = incomesTotal - expensesTotal
+
+            mainStadisticsNet.innerHTML = `$${netTotal}`;
+
+        }
+      
+
+        axios('https://localhost:44398/api/Dinero')
+            .then(({ data }) => {
+                console.log(data)
+                setDataForIncomesChart(data)
+            }).then(() => {
+                axios('https://localhost:44398/api/Gastos')
+                    .then(({ data }) => {
+                        console.log('gastos', data)
+                        setDataForExpenses(data)
+                    }).then((x) => {
+                        ctxExpByCatDashboard &&
+                            chart(
+                                'doughnut',
+                                dataExpensesbyCategory,
+                                labelsCategories,
+                                'Expenses by Categories',
+                                'Expenses by Categories',
+                                ctxExpByCatDashboard
+                            );
+
+                    })
+            })
+            .then(() => {
+
+
+               
+
+                ctxIncExpDashboard &&
+                    new Chart(ctxIncExpDashboard, {
+                        type: 'bar',
+                        data: {
+                            labels: labels,
+                            datasets: [
+                                {
+                                    label: 'Incomes',
+                                    data: incomes,
+                                    backgroundColor: ['#19f18a'],
+                                    borderColor: ['#000000'],
+                                    borderWidth: 1,
+                                },
+                                {
+                                    label: 'Expenses',
+                                    data: expenses,
+                                    backgroundColor: ['#49c6e5'],
+                                    borderColor: ['#000000'],
+                                    borderWidth: 1,
+                                },
+                            ],
+                        },
+                        options: {
+                            plugins: {
+                                title: {
+                                    display: false,
+                                    text: 'Incomes and Expenses of 2021',
+                                    color: '#363732',
+                                    padding: {
+                                        top: 10,
+                                        bottom: 20,
+                                    },
+                                    font: {
+                                        family: 'Montserrat',
+                                        size: 36,
+                                        weight: 'normal',
+                                        lineHeight: 1.2,
+                                    },
+                                },
+                            },
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                },
+                            },
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            pointDotRadius: 10,
+                            bezierCurve: false,
+                            scaleShowVerticalLines: false,
+                            scaleGridLineColor: 'black',
+                        },
+
+                    });
+
+
+                
+
+            })
+
+
+
+    </script>
+
+}
+
+

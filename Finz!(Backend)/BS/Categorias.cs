@@ -35,6 +35,11 @@ namespace BS
             return new DAL.Categorias(context).GetOneById(id);
         }
 
+        public data.Categorias GetOneById(string id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Insert(data.Categorias t)
         {
             new DAL.Categorias(context).Insert(t);

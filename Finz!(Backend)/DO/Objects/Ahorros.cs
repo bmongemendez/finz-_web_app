@@ -11,7 +11,7 @@ namespace DO.Objects
     {
         public int IdAhorros { get; set; }
         public int AhorrosAcutales { get; set; }
-        public int IdUsuario { get; set; }
+        public String IdUsuario { get; set; }
         public int IdCategoria { get; set; }
 
         public virtual Categorias IdCategoriaNavigation { get; set; }

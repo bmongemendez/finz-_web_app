@@ -32,9 +32,14 @@ namespace DAL
             return _repo.GetAll();
         }
 
-        public data.Usuario GetOneById(int id)
+        public data.Usuario GetOneById(String id)
         {
             return _repo.GetOneById(id);
+        }
+
+        public data.Usuario GetOneById(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public void Insert(data.Usuario t)

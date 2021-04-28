@@ -1,0 +1,16 @@
+div.container {
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 190px rem(100px) 0 !important;
+}
+
+.section-container {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	justify-content: space-around !important;
+	min-height: 500px !important;
+}
+
+.section-container--dashboard {
+	margin-bottom: rem(100px) !important;
+}

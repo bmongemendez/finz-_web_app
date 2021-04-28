@@ -1,26 +1,34 @@
-﻿@{
+﻿@model Finz__Frontend_.Models.Dinero
+
+@{
     ViewData["Title"] = "Incomes";
     ViewData["MenuActive"] = "Incomes";
 }
+
 <div class="container">
     <partial name="../Components/_MenuPartial" />
     <div class="section-container">
         <div class="dashboard__chart-container chart-container">
             <div class="chart__title-container">
-                <h4 class="chart__title">Incomes of</h4>
+                @*<h4 class="chart__title">Incomes of</h4>
                 <select name="" id="incomesYear" class="chart__year-select">
                     <option value="2021">2021</option>
                     <option value="2020">2020</option>
-                </select>
+                </select>*@
             </div>
             <canvas id="chartIncomes"></canvas>
         </div>
         <div class="form-container">
-            <form action="" class="form">
+            <form asp-action="Create" class="form">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <h4 class="form__title">Add Incomes</h4>
                 <div class="form__input-container">
-                    <input name="email" type="number" class="form__input" />
+                    <input asp-for="DineroActual" class="form__input" />
                     <label for="email" class="form__label">Incomes</label>
+                    <span asp-validation-for="DineroActual" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input asp-for="IdUsuario" hidden="hidden" class="form-control" value="@ViewBag.userId" />
                 </div>
                 <button type="submit"
                         id="addIncomesButton"
@@ -32,4 +40,142 @@
         </div>
     </div>
 </div>
+
+@*<h1>Index</h1>
+
+    <p>
+         <a asp-action="Create" class="button__secondary text-dark">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DineroActual)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdUsuarioNavigation)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DineroActual)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.IdUsuario)
+                    </td>
+                    <td>
+                        <a class="btn btn-light border-info" asp-action="Edit" asp-route-id="@item.IdDinero">Edit</a> |
+                        <a class="btn btn-light border-info" asp-action="Details" asp-route-id="@item.IdDinero">Details</a> |
+                        <a class="btn btn-light border-info" asp-action="Delete" asp-route-id="@item.IdDinero">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>*@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+<script type="text/javascript">
+
+    let userId = '@ViewBag.userId';
+
+        const ctxIncomes =
+            document.querySelector('#chartIncomes') &&
+            document.querySelector('#chartIncomes').getContext('2d');
+
+
+        const chartIncomes = (type, data, labels, datasetsTitle, title, context) => {
+            new Chart(context, {
+                type: type,
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: datasetsTitle,
+                            data: data,
+                            backgroundColor: [
+                                '#19f18a',
+                                '#49c6e5',
+                                '#fffbfa',
+                                '#363732',
+                                '#ef626c',
+                            ],
+                            borderColor: ['#000000'],
+                            borderWidth: 1,
+                        },
+                    ],
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: false,
+                            text: title,
+                            color: '#363732',
+                            padding: {
+                                top: 10,
+                                bottom: 20,
+                            },
+                            font: {
+                                family: 'Montserrat',
+                                size: 36,
+                                weight: 'normal',
+                                lineHeight: 1.2,
+                            },
+                        },
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                        },
+                    },
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    pointDotRadius: 10,
+                    bezierCurve: false,
+                    scaleShowVerticalLines: false,
+                    scaleGridLineColor: 'black',
+                },
+            });
+        };
+
+
+    let dataIncomes = [];
+
+        let labelsIncomes = [
+        ];
+
+
+
+    const setDataForIncomesChart = (data) => {
+        console.log(data[0].idUsuario)
+        data.map(x => {
+            if (x.idUsuario == userId) {
+                dataIncomes.push(x.dineroActual);
+                labelsIncomes.push(x.idDinero);
+            }
+        })
+        console.log('dataincomes: ', labelsIncomes)
+        }
+
+        axios('https://localhost:44398/api/Dinero')
+            .then(({ data }) => {
+                console.log(data)
+                setDataForIncomesChart(data)
+            }).then(() => {
+                ctxIncomes &&
+                    chartIncomes('line', dataIncomes, labelsIncomes, 'Incomes', 'Incomes', ctxIncomes)
+            })
+
+
+        
+</script>
+
+}
+
+
 

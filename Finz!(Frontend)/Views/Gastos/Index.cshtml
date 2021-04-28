@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Finz__Frontend_.Models.Gastos>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<div class="container  w-100 min-vw-100">
+    <partial name="../Components/_MenuPartial" />
+
+    <p class="mt-5 mb-5">
+        <a asp-action="Create" class="button__secondary text-dark">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Expenses
+                </th>
+                <th>
+                    From
+                </th>
+                <th>
+                    To
+                </th>
+                <th>
+                    Category
+                </th>
+                @*<th>
+                    User
+                </th>*@
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Gastos1)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaInicio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaFin)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.Nombre)
+                    </td>
+                    @*<td>
+                        @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.IdUsuario)
+                    </td>*@
+                    <td>
+                        <a class="btn btn-light border-info" asp-action="Edit" asp-route-id="@item.IdGastos">Edit</a> |
+                        <a class="btn btn-light border-info" asp-action="Details" asp-route-id="@item.IdGastos">Details</a> |
+                        <a class="btn btn-light border-info" asp-action="Delete" asp-route-id="@item.IdGastos">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

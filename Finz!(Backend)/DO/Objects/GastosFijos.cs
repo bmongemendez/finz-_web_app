@@ -12,7 +12,7 @@ namespace DO.Objects
         public int IdGastoFijo { get; set; }
         public string Nombre { get; set; }
         public int Valor { get; set; }
-        public int IdUsuario { get; set; }
+        public String IdUsuario { get; set; }
 
         public virtual Usuario IdUsuarioNavigation { get; set; }
     }

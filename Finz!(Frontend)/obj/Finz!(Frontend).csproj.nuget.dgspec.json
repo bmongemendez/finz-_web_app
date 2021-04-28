@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev Projects\\Finz!(Frontend)\\Finz!(Frontend)\\Finz!(Frontend).csproj": {}
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Frontend)\\Finz!(Frontend).csproj": {}
   },
   "projects": {
-    "D:\\Dev Projects\\Finz!(Frontend)\\Finz!(Frontend)\\Finz!(Frontend).csproj": {
+    "D:\\Dev Projects\\Finz! Web App\\Finz!(Frontend)\\Finz!(Frontend).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev Projects\\Finz!(Frontend)\\Finz!(Frontend)\\Finz!(Frontend).csproj",
+        "projectUniqueName": "D:\\Dev Projects\\Finz! Web App\\Finz!(Frontend)\\Finz!(Frontend).csproj",
         "projectName": "Finz!(Frontend)",
-        "projectPath": "D:\\Dev Projects\\Finz!(Frontend)\\Finz!(Frontend)\\Finz!(Frontend).csproj",
+        "projectPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Frontend)\\Finz!(Frontend).csproj",
         "packagesPath": "C:\\Users\\bmong\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev Projects\\Finz!(Frontend)\\Finz!(Frontend)\\obj\\",
+        "outputPath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Frontend)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmong\\AppData\\Roaming\\NuGet\\NuGet.Config",

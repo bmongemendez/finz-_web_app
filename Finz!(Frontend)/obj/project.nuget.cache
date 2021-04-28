@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1eUgrJiAIHwL4+USg37vw/SE7L5ItlsL3RYusD2sBBUdARpEnrLPCtjOL+7Xp2IqIY5ya+vGbf4xeH7SQlefFg==",
+  "dgSpecHash": "Ml80tpddVdfFe6ZznZPF+aQ0RZ0wN/xDOfDoBNSGaqGwBLO1YuprITK8HJrPQc43g8dYY+0LnxkEl/fbSOBrCg==",
   "success": true,
-  "projectFilePath": "D:\\Dev Projects\\Finz!(Frontend)\\Finz!(Frontend)\\Finz!(Frontend).csproj",
+  "projectFilePath": "D:\\Dev Projects\\Finz! Web App\\Finz!(Frontend)\\Finz!(Frontend).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bmong\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.1.14\\microsoft.aspnetcore.authentication.google.3.1.14.nupkg.sha512",
     "C:\\Users\\bmong\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.13\\microsoft.aspnetcore.cryptography.internal.3.1.13.nupkg.sha512",
