@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    ViewData["MenuActive"] = "Dashboard";
+
+}
+<div class="container">
+    <partial name="../Components/_MenuPartial" />
+    <div class="section-container section-container--dashboard">
+        <div class="dashboard__main-stadistics">
+            <div class="main-stadistic__container">
+                <img src="~/assets/Income_Icon.svg"
+                     class="main-stadistic__image" />
+                <p class="main-stadistic__text">Incomes This Month</p>
+                <p class="main-stadistic__value">+$324</p>
+            </div>
+        </div>
+        <div class="dashboard__main-stadistics">
+            <div class="main-stadistic__container">
+                <img src="~/assets/Savings_Icon.svg"
+                     class="main-stadistic__image" />
+                <p class="main-stadistic__text">
+                    Your net <br />
+                    worth is
+                </p>
+                <p class="main-stadistic__value">$1322</p>
+            </div>
+        </div>
+        <div class="dashboard__main-stadistics">
+            <div class="main-stadistic__container">
+                <img src="~/assets/Expense_Icon.svg"
+                     class="main-stadistic__image" />
+                <p class="main-stadistic__text">Expenses This Month</p>
+                <p class="main-stadistic__value">-$324</p>
+            </div>
+        </div>
+        <div class="dashboard__chart-container chart-container">
+            <div class="chart__title-container">
+                <h4 class="chart__title">Incomes and Expenses of</h4>
+                <select name="" id="incExpYearDashboard" class="chart__year-select">
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+            <canvas id="chartExpIncDashboard"></canvas>
+        </div>
+        <div class="dashboard__chart-container chart-container">
+            <div class="chart__title-container">
+                <h4 class="chart__title">Expenses by category of</h4>
+                <select name="" id="expCatYearDashboard" class="chart__year-select">
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+            <canvas id="chartExpCatDashboard"></canvas>
+        </div>
+    </div>
+</div>
+   

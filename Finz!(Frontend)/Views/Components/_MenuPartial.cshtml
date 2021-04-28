@@ -1,0 +1,21 @@
+﻿<ul class="menu">
+    <li class="menu__item">
+        <a asp-area="" asp-controller="Incomes" asp-action="Index" class="menu__link @((string)ViewData["MenuActive"] == "Incomes" ? "menu__link--active" : "")">
+            Incomes
+        </a>
+    </li>
+    <li class="menu__item">
+        <a href="" class="menu__link">Savings</a>
+    </li>
+    <li class="menu__item"><a href="" class="menu__link">Expenses</a></li>
+    <li class="menu__item">
+        <a asp-area="" asp-controller="Dashboard" asp-action="Index" class="menu__link @((string)ViewData["MenuActive"] == "Dashboard" ? "menu__link--active" : "")">
+            Dashboard
+        </a>
+    </li>
+    <li class="menu__item"><a href="" class="menu__link">Categories</a></li>
+    <li class="menu__item">
+        <a href="" class="menu__link">Fixed Costs</a>
+    </li>
+    <li class="menu__item"><a href="" class="menu__link">Challenges</a></li>
+</ul>

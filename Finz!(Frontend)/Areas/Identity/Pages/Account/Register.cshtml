@@ -1,0 +1,77 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+<div class="container">
+    <div class="register-container">
+        <div class="register__image-container">
+            <img class="register__image"
+                 src="~/assets/Register_Image.svg"
+                 alt="" />
+        </div>
+        <div class="register__divider"></div>
+        <div class="register__form-container">
+            <form  class="form register__form" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                @*<div class="form__input-container">
+                <input name="name" type="text" class="form__input" />
+                <label for="name" class="form__label">Name</label>
+            </div>*@
+                <div class="form__input-container">
+                    <input asp-for="Input.Email"  class="form__input" />
+                    <label asp-for="Input.Email" for="name" class="form__label"></label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form__input-container">
+                    <input asp-for="Input.Password"
+                           class="form__input form__password" />
+                    <label asp-for="Input.Password" for="password" class="form__label"></label>
+                    <span class="form__password-eye"></span>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form__input-container">
+                    <input asp-for="Input.ConfirmPassword"
+                           class="form__input form__password" />
+                    <label asp-for="Input.ConfirmPassword" for="password" class="form__label"></label>
+                    <span class="form__password-eye"></span>
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                <input type="submit"
+                       id="registerButton"
+                       class="form__submit button__primary"
+                       value="Register" />
+
+            </form>
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
+                            for details on setting up this ASP.NET application to support logging in via external services.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form id="external-account" class="form form--external-register" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                        @foreach (var provider in Model.ExternalLogins)
+                        {
+                            <button type="submit" id="registerGoogleButton" name="provider" value="@provider.Name"
+                                    class="form__submit button__secondary">
+                                <span class="form__google-icon"></span>
+                                Register With @provider.DisplayName
+                            </button>
+                        }
+                    </form>
+                }
+            }
+            <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" class="toggle-login-register">Already registered? Login</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

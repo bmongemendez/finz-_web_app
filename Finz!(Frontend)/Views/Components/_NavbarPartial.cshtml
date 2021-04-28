@@ -1,0 +1,44 @@
+﻿
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<nav class="navbar">
+    <a  asp-area="" asp-controller="Home" asp-action="Index" class="navbar__logo">Finz!</a>
+    <ul class="navbar__list">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <li class="navbar__item">
+                <div class="navbar__line">
+                    <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage" class="navbar__user-info-text">@User.Identity.Name - @ViewData["MenuActive"]</a>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="navbar__link button__secondary">Logout</button>
+
+                </form>
+            </li>
+        }
+        else
+        {
+            <li class="navbar__item"><a href="" class="navbar__link">APP</a></li>
+            <li class="navbar__item"><a href="" class="navbar__link">About</a></li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Pricing</a>
+            </li>
+            <li class="navbar__item">
+                <div class="navbar__divider"></div>
+            </li>
+            <li class="navbar__item">
+                <a asp-area="Identity" asp-page="/Account/Login" class="navbar__link">Login</a>
+            </li>
+            <li class="navbar__item">
+                <a asp-area="Identity" asp-page="/Account/Register" class="navbar__link button__primary">Register</a>
+            </li>
+        }
+    </ul>
+</nav>
+
+
+

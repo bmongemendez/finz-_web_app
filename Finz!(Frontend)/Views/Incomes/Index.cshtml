@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Incomes";
+    ViewData["MenuActive"] = "Incomes";
+}
+<div class="container">
+    <partial name="../Components/_MenuPartial" />
+    <div class="section-container">
+        <div class="dashboard__chart-container chart-container">
+            <div class="chart__title-container">
+                <h4 class="chart__title">Incomes of</h4>
+                <select name="" id="incomesYear" class="chart__year-select">
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+            <canvas id="chartIncomes"></canvas>
+        </div>
+        <div class="form-container">
+            <form action="" class="form">
+                <h4 class="form__title">Add Incomes</h4>
+                <div class="form__input-container">
+                    <input name="email" type="number" class="form__input" />
+                    <label for="email" class="form__label">Incomes</label>
+                </div>
+                <button type="submit"
+                        id="addIncomesButton"
+                        class="form__submit button__primary">
+                    <span class="form__add-icon"></span>
+                    ADD
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

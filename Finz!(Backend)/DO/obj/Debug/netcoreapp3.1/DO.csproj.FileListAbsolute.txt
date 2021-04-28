@@ -1,0 +1,9 @@
+D:\Dev Projects\Finz!(Backend)\DO\bin\Debug\netcoreapp3.1\DO.deps.json
+D:\Dev Projects\Finz!(Backend)\DO\bin\Debug\netcoreapp3.1\DO.dll
+D:\Dev Projects\Finz!(Backend)\DO\bin\Debug\netcoreapp3.1\DO.pdb
+D:\Dev Projects\Finz!(Backend)\DO\obj\Debug\netcoreapp3.1\DO.csprojAssemblyReference.cache
+D:\Dev Projects\Finz!(Backend)\DO\obj\Debug\netcoreapp3.1\DO.AssemblyInfoInputs.cache
+D:\Dev Projects\Finz!(Backend)\DO\obj\Debug\netcoreapp3.1\DO.AssemblyInfo.cs
+D:\Dev Projects\Finz!(Backend)\DO\obj\Debug\netcoreapp3.1\DO.csproj.CoreCompileInputs.cache
+D:\Dev Projects\Finz!(Backend)\DO\obj\Debug\netcoreapp3.1\DO.dll
+D:\Dev Projects\Finz!(Backend)\DO\obj\Debug\netcoreapp3.1\DO.pdb
