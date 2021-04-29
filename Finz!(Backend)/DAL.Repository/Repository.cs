@@ -99,7 +99,7 @@ namespace DAL.Repository
 
         public T GetOneById(int id)
         {
-            throw new NotImplementedException();
+            return dbContext.Set<T>().Find(id);
         }
     }
 }

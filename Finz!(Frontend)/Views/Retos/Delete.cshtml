@@ -47,6 +47,7 @@
         </dl>
 
         <form asp-action="Delete">
+            <label  asp-for="Nombre"></label>
             <input type="hidden" asp-for="IdReto" />
             <input type="submit" value="Delete" class="btn btn-light border-info" /> |
             <a class="btn btn-light border-info" asp-action="Index">Back to List</a>

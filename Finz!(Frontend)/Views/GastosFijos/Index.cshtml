@@ -15,14 +15,14 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Nombre)
+                    Name
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Valor)
+                    Value
                 </th>
-                <th>
+                @*<th>
                     @Html.DisplayNameFor(model => model.IdUsuarioNavigation)
-                </th>
+                </th>*@
                 <th></th>
             </tr>
         </thead>
@@ -36,9 +36,9 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Valor)
                     </td>
-                    <td>
+                    @*<td>
                         @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.IdUsuario)
-                    </td>
+                    </td>*@
                     <td>
                         <a class="btn btn-light border-info" asp-action="Edit" asp-route-id="@item.IdGastoFijo">Edit</a> |
                         <a class="btn btn-light border-info" asp-action="Details" asp-route-id="@item.IdGastoFijo">Details</a> |

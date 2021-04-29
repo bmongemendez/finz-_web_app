@@ -9,6 +9,7 @@ using Finz__Frontend_.Models;
 using data = Finz__Frontend_.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Security.Claims;
 
 namespace Finz__Frontend_.Controllers
 {
@@ -60,6 +61,9 @@ namespace Finz__Frontend_.Controllers
         {
             //ViewData["IdCategoria"] = new SelectList(_context.Categorias, "IdCategoria", "Nombre");
             //ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "IdUsuario");
+
+            ViewBag.userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             return View();
         }
 
@@ -104,6 +108,10 @@ namespace Finz__Frontend_.Controllers
             {
                 return NotFound();
             }
+
+            ViewBag.userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+
             return View(gastos);
         }
 
